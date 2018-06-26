@@ -1,4 +1,4 @@
-FROM    farseer810/ubuntu:nginx
+FROM    farseer810/ubuntu:golang
 MAINTAINER farseer810 "https://github.com/farseer810/ubuntu-ali"
 
 RUN apt-get update && \
