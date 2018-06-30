@@ -21,7 +21,5 @@ go version;
 
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH" && \
-echo "export GOPATH=/go\n" >> /etc/profile && \
-echo "export PATH=$GOPATH:$PATH" >> /etc/profile
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH
