@@ -30,7 +30,7 @@ echo "export LANGUAGE=zh_CN.UTF-8\n" >> /etc/profile &&\
 echo "export LANG=zh_CN.UTF-8\n" >> /etc/profile
 
 # set tzdata
-RUN ap-get install -y tzdata && \
-ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &&\
+RUN apt-get install -y tzdata && \
+ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
 dpkg-reconfigure tzdata
 
