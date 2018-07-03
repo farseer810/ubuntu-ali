@@ -1,4 +1,4 @@
-FROM    farseer810/ubuntu:golang
+FROM    farseer810/ubuntu:16.04
 MAINTAINER farseer810 "https://github.com/farseer810/ubuntu-ali"
 
 # install sshd and export port 22 by default
