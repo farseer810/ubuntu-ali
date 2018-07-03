@@ -20,4 +20,4 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C
 
 # install some basic software
-RUN apt-get install -y apt-utils build-essential vim git wget
+RUN apt-get install -y apt-utils build-essential vim git wget software-properties-common python-software-properties
