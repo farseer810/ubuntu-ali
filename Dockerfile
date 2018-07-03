@@ -22,7 +22,8 @@ ENV LANGUAGE zh_CN.UTF-8
 ENV LANG zh_CN.UTF-8
 
 # install some basic software
-RUN apt-get install -y apt-utils build-essential vim git wget software-properties-common python-software-properties language-pack-zh-hans language-pack-zh-hans-base && \
+RUN apt-get install -y language-pack-zh-hans language-pack-zh-hans-base && \
+apt-get install -y apt-utils build-essential vim git wget software-properties-common python-software-properties && \
 echo "export LC_ALL=zh_CN.UTF-8\n" >> /etc/profile && \
 echo "export LANGUAGE=zh_CN.UTF-8\n" >> /etc/profile &&\
 echo "export LANG=LANG\n" >> /etc/profile
