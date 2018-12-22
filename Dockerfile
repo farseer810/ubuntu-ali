@@ -1,4 +1,4 @@
-FROM    farseer810/ubuntu:golang
+FROM    registry.cn-shenzhen.aliyuncs.com/farseer810/ubuntu:golang
 MAINTAINER farseer810 "https://github.com/farseer810/ubuntu-ali"
 
 RUN apt-get update && \
