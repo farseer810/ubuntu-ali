@@ -1,4 +1,4 @@
-FROM    farseer810/ubuntu:nginx
+FROM    registry.cn-shenzhen.aliyuncs.com/farseer810/ubuntu:nginx
 MAINTAINER farseer810 "https://github.com/farseer810/ubuntu-ali"
 
 ENV GOLANG_VERSION 1.10.3
