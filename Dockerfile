@@ -2,7 +2,8 @@ FROM    registry.cn-shenzhen.aliyuncs.com/farseer810/ubuntu:16.04
 MAINTAINER farseer810 "https://github.com/farseer810/ubuntu-ali"
 
 # install sshd and export port 22 by default
-RUN apt-get install -y openssh-server && \
+RUN apt-get update && \
+apt-get install -y openssh-server && \
 mkdir /var/run/sshd && \
 echo 'root:root' | chpasswd && \
 sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
