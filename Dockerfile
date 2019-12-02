@@ -1,18 +1,18 @@
-FROM	ubuntu:16.04
+FROM	ubuntu:18.04
 MAINTAINER farseer810 "https://github.com/farseer810/ubuntu-ali"
 
 # set aliyun source list as default
-RUN echo "deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse\n" > /etc/apt/sources.list && \
-echo "deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse\n" >> /etc/apt/sources.list && \
-echo "deb http://archive.canonical.com/ubuntu/ xenial partner\n" >> /etc/apt/sources.list && \
+RUN echo "deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse\n" > /etc/apt/sources.list && \
+echo "deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse\n" >> /etc/apt/sources.list && \
+echo "deb http://archive.canonical.com/ubuntu/ bionic partner\n" >> /etc/apt/sources.list && \
 apt-get update
 
 # disable dialog frontend during installation
